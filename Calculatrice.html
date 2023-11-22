@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma calculatrice</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <marquee behavior="" direction=""><h2>EKOTTO EXPEDY JULIENNE CAROLINE --B2</h2></marquee>
+
+    <h1><center>Calculatrice</center></h1>
+      <div class="calculator">
+        <input type="text" id="result" readonly>
+        <div class="buttons">
+            <button onclick="appendSymbol('1')">1</button>
+            <button onclick="appendSymbol('2')">2</button>
+            <button onclick="appendSymbol('3')">3</button>
+            <button onclick="appendSymbol('+')">+</button>
+
+            <button onclick="appendSymbol('4')">4</button>
+            <button onclick="appendSymbol('5')">5</button>
+            <button onclick="appendSymbol('6')">6</button>
+            <button onclick="appendSymbol('-')">-</button>
+
+            <button onclick="appendSymbol('7')">7</button>
+            <button onclick="appendSymbol('8')">8</button>
+            <button onclick="appendSymbol('9')">9</button>
+            <button onclick="appendSymbol('*')">*</button>
+            
+            
+            <button onclick="calculateSquare()">x<sup>2</sup></button>
+            <button onclick="appendSymbol('0')">0</button>
+            <button onclick="calculateSin()">sin</button>
+            <button onclick="appendSymbol('/')">/</button>
+            
+            <button onclick="calculateCos()">cos</button>
+            <button onclick="appendSymbol('.')">.</button>
+            <button onclick="clearResult()">C</button>
+            <button onclick="calculateResult()">=</button>
+          
+         
+        </div>
+        <h2>Historique des opérations</h2>
+        <div id="memory"></div>
+      </div>
+    
+      <script src="script.js"></script>
+   
+
+
+
+</body>
+</html>
